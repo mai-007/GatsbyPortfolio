@@ -27,6 +27,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         typekit: {
@@ -47,6 +54,7 @@ module.exports = {
       `gatsby-transformer-sharp`,
       `gatsby-remark-images`,
       `gatsby-plugin-sharp`,
+      `gatsby-plugin-mdx`,
     {
       resolve: "@chakra-ui/gatsby-plugin",
       options: {
